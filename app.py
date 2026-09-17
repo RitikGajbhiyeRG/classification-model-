@@ -17,7 +17,7 @@ def load_assets():
     
     # Re-derive feature columns and data ranges, as they are not saved in the pkl files.
     # For this, we temporarily load the raw data.
-    data_sample = pd.read_csv("/content/dynamic_supply_chain_logistics_dataset.csv")
+    data_sample = pd.read_csv("dynamic_supply_chain_logistics_dataset.csv")
     leakage_columns = [
         "timestamp",
         "risk_classification",
